@@ -8,6 +8,7 @@ https://trailhead.salesforce.com/content/learn/projects/quick-start-salesforce-d
 
 Install the CLI from https://developer.salesforce.com/tools/sfdxcli.
 >sfdx update
+>
 
 >sfdx auth:web:login --setdefaultdevhubusername --setalias DevHubYourBrand
 
