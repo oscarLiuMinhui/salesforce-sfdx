@@ -44,10 +44,14 @@ e.g.
 
 ## Useful Commands
 >sfdx commands | grep user
+
 >sfdx -h
+
 >sfdx force:source -h
+
 >sfdx force:source:pull
+
 >sfdx force:source:push
->
+
 
 
