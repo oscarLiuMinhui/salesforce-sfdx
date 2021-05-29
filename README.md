@@ -15,7 +15,7 @@ sfdx force:org:list
 
 sfdx config:set defaultdevhubusername=DevHubYourBrand --global
 
-Create a Salesforce DX Project
+## Create a Salesforce DX Project
 
 sfdx force:project:create --projectname yourbrand-subname
 
