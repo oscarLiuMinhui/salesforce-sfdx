@@ -23,6 +23,7 @@ Install the CLI from https://developer.salesforce.com/tools/sfdxcli.
 >cd yourbrand-subname
 
 >mkdir assets
+
 >sfdx force:source:retrieve --manifest assets/package.xml --targetusername DevHubYourBrand --wait 10
 
 
@@ -33,6 +34,7 @@ Install the CLI from https://developer.salesforce.com/tools/sfdxcli.
 e.g.
 >sfdx force:data:record:create -s Account -v "Name='Hyatt' BillingStreet='5 Embarcadero Center' BillingCity='San Francisco' BillingState='CA' BillingPostalCode='94111' Phone='(415) 788-1234' Website='www.hyatt.com'"
 >mkdir data
+>
 >sfdx force:data:tree:export -q "SELECT Name, BillingStreet, BillingCity, BillingState, BillingPostalCode, Phone, Website FROM Account WHERE BillingStreet != NULL AND BillingCity != NULL and BillingState != NULL" -d ./data
 
 >sfdx force:data:tree:import --sobjecttreefiles data/Account.json
@@ -42,5 +44,10 @@ e.g.
 
 ## Useful Commands
 >sfdx commands | grep user
+>sfdx -h
+>sfdx force:source -h
+>sfdx force:source:pull
+>sfdx force:source:push
+>
 
 
